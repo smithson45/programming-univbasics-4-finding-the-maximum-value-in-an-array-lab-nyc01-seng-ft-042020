@@ -1,3 +1,9 @@
 def find_max_value(array)
-  # Add your solution here
+  m = -1
+  array.size.times do |i|
+    if array[i] > m
+      m = array[i]
+    end
+  end
+  m
 end
